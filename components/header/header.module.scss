@@ -1,0 +1,145 @@
+.blueHeaderWrapper {
+  padding-block: 10px;
+  background-color: #0582ff;
+
+  h6 {
+    font-family: var(--font-dm-sans);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .iconWrapper {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .flexWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .phoneWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .locationWrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media screen and (max-width:992px) {
+       display: none;
+
+      }
+      
+    }
+  }
+}
+
+.mainNavigation {
+  padding-block: 26px;
+  background-color: #000;
+  position: sticky;
+  z-index: 1000000;
+  top: -1;
+
+
+  .flexWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width:992px) {
+      justify-content: flex-end;
+
+    }
+
+    .logoWrapper{
+        width: 43px;
+        height: 43px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .navWrappper{
+
+      @media screen and (max-width:992px) {
+        display: none;
+      }
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-family: var(--font-dm-sans);
+            font-size: 16px;
+            font-weight: 400;
+
+          
+
+            li{
+                color: #fff;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+                a{
+                  color: inherit;
+                  text-decoration: none;
+                }
+                &:hover{
+                    color: #0582ff;
+                }
+            }
+        }
+
+    }
+
+    .chatWrapper{
+        padding: 8px 8px  8px 12px;
+        border:1px solid #414141;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+cursor: pointer;
+
+@media screen and (max-width:992px) {
+
+  right:50px;
+  
+}
+        h6{
+            font-family: var(--font-dm-sans);
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        >div{
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+    }
+  }
+}
+.mobileBtn{
+  @media screen and (min-width:992px) {
+    display: none;
+  }
+}

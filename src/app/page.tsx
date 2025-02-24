@@ -187,7 +187,11 @@ export default function Home() {
                 </p>
 
                 <div>
-                  <img src="/whyChooseImage.png" alt="" />
+                  <Image
+                  src={'whyChooseImage.png'}
+                  alt="image"
+                  fill={true}
+                  />
                 </div>
               </div>
             </div>
@@ -255,8 +259,8 @@ export default function Home() {
 
             <h4>Trusted by Businesses, Valued for Excellence</h4>
             <p>
-              "Client satisfaction is our priority. Hear from businesses that
-              trust our reliable manpower and facility solutions."
+              {`"Client satisfaction is our priority. Hear from businesses that
+              trust our reliable manpower and facility solutions."`}
             </p>
           </div>
 
@@ -298,13 +302,17 @@ export default function Home() {
                         <p>Hotel Manager</p>
                       </div>
                       <div>
-                        <img src="/4StarIcon.png" alt="" />
+                        <Image
+                        src={"/4StarIcon.png"}
+                        alt="image"
+                        fill={true}
+                         />
                       </div>
 
                       <div></div>
                     </div>
 
-                    <h5>"Trustworthy Security Services"</h5>
+                    <h5>{`"Trustworthy Security Services"`}</h5>
                     <p>
                       The security personnel provided by Wellstar are
                       well-trained and disciplined. We feel much safer with
@@ -352,13 +360,16 @@ export default function Home() {
                         <p>Hotel Manager</p>
                       </div>
                       <div>
-                        <img src="/4StarIcon.png" alt="" />
+                        <Image
+                        src="/4StarIcon.png"
+                        alt="image0"
+                        fill={true} />
                       </div>
 
                       <div></div>
                     </div>
 
-                    <h5>"Trustworthy Security Services"</h5>
+                    <h5>{`"Trustworthy Security Services"`}</h5>
                     <p>
                       The security personnel provided by Wellstar are
                       well-trained and disciplined. We feel much safer with

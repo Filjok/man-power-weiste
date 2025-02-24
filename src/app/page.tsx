@@ -188,7 +188,7 @@ export default function Home() {
 
                 <div>
                   <Image
-                  src={'whyChooseImage.png'}
+                  src={'/whyChooseImage.png'}
                   alt="image"
                   fill={true}
                   />
@@ -301,9 +301,9 @@ export default function Home() {
                         <h6>Aisha Rahman</h6>
                         <p>Hotel Manager</p>
                       </div>
-                      <div>
+                      <div className="starWrapper">
                         <Image
-                        src={"/4StarIcon.png"}
+                        src={"/4starIcon.png"}
                         alt="image"
                         fill={true}
                          />
@@ -359,9 +359,9 @@ export default function Home() {
                         <h6>Aisha Rahman</h6>
                         <p>Hotel Manager</p>
                       </div>
-                      <div>
+                      <div className="starWrapper">
                         <Image
-                        src="/4StarIcon.png"
+                        src={"/4starIcon.png"}
                         alt="image0"
                         fill={true} />
                       </div>
